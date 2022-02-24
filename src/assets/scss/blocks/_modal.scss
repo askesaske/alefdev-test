@@ -1,0 +1,35 @@
+.modal {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(29, 29, 29, 0.4);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+
+  &__wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 522px;
+    background-color: $white-color;
+    border-radius: 2px;
+    box-shadow: 0 2px 20px rgba(220, 219, 219, 0.25);
+    padding: 60px 40px 40px;
+  }
+
+  &__cancel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+
+  &__title {
+    text-align: center;
+    @include text-style(2.4rem, 600, $black-color);
+    margin-bottom: 13px;
+  }
+}
